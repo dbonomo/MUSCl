@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,300,700');
+
+// Theme Settings
+
+$space: 20px;
+$navSize: $space*4;
+
+// General Mixins
+
+@mixin pos($posType, $posZ: null) {
+  @if $posZ {
+    z-index: $posZ;
+  }
+  position: $posType;
+  top: 0;
+  @include transform(0.6s);
+}
+
+@mixin hamburger($hw, $hh) {
+  width: $hw;
+  height: $hh;
+  line-height: 0;
+  border-top: $hh*3 double;
+  border-bottom: $hh solid;
+}
+
+@mixin box($shadowColor, $shadowSize: 4px, $shadowBlur: 0px, $shadowOpacity: 0) {
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=135, Color=rgba($shadowColor, $shadowOpacity)";/*IE 8*/
+-moz-box-shadow: $shadowSize $shadowSize $shadowBlur rgba($shadowColor, $shadowOpacity);/*FF 3.5+*/
+-webkit-box-shadow: $shadowSize $shadowSize $shadowBlur rgba($shadowColor, $shadowOpacity);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+box-shadow: $shadowSize $shadowSize $shadowBlur rgba($shadowColor, $shadowOpacity);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=135, Color=rgba($shadowColor, $shadowOpacity)); /*IE 5.5-7*/
+}
+
+@mixin transform($speed) {
+  -webkit-transition: all $speed;
+  -moz-transition: all $speed;
+  transition: all $speed;
+}
+
+// RESET
+@import "_reset.scss";
+
+// NORMALIZE
+@import "_normalize.scss";
+
+// GLOBAL
+@import "_global.scss";
+
+// FORMS
+@import "_forms.scss";
+
+// FLEXSLIDER
+@import "_flexslider.scss";
+
+// THEME
+@import "_theme.scss";
+
+// MEDIA
+@import "_responsive.scss";

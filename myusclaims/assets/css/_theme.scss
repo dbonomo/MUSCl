@@ -1,0 +1,552 @@
+// PRIMARY THEME
+
+nav {
+  display: none;
+  color: #fff;
+  background: #ddd;
+  text-transform: uppercase;
+  ul {
+    border-top: 4px solid #ccc;
+    border-bottom: 4px solid #ccc;
+    li {
+      border-bottom: 1px solid #ccc;
+      &:last-child {
+        border: none;
+      }
+      a {
+        display: block;
+        padding: $space 0;
+        text-decoration: none;
+        &:link, &:visited {
+          color: #999;
+        }
+        &:hover, &:visited:hover {
+          color: #3c7cc9;
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+
+header {
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  min-width: 320px;
+  top: 0;
+  left: 0;
+  padding-bottom: $space;
+  background: #fff;
+  @include transform(1s);
+  &.shadow {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=180, Color=#333333)";/*IE 8*/
+    -moz-box-shadow: 0px 4px 0px rgba(0,0,0,.12);/*FF 3.5+*/
+    -webkit-box-shadow: 0px 4px 0px rgba(0,0,0,.12);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 0px 4px 0px rgba(0,0,0,.12);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=180, Color=#CCCCCC); /*IE 5.5-7*/
+  }
+  .logo {
+    padding-top: $space;
+  }
+  .top {
+    padding: $space/2 0;
+    padding-left: $space/3;
+    background: #3c7cc9;
+  }
+  .menu {
+    float: left;
+    display: inline-block;
+    a {
+      color: #fff;
+      &:link, &:visited {
+        span {
+          display: none;
+          opacity: .65;
+          @include transform(1s);
+          font-size: 1.25em;
+          margin-left: $space/2;
+        }
+      }
+      &:hover, &:visited:hover {
+        span {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .contact {
+    float: right;
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 22px;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        display: none;
+        /* display: inline-block; */
+        padding: 0 $space/2;
+        border-right: 1px dotted #fff;
+        opacity: .65;
+        @include transform(1s);
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          display: inline-block;
+          border: none;
+          opacity: 1;
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  color: #b6b4b4;
+  font-size: .9em;
+  padding: $space*2 $space 0;
+  background: #363636;
+  border-top: $space/3 solid #6ba439;
+  a {
+    &:link, &:visited {
+      color: #b6b4b4;
+    }
+    &:hover, &:visited:hover {
+      color: #fff;
+    }
+  }
+  h3 {
+    color: #fff;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .info,
+  .links {
+    margin-bottom: $space;
+    border-bottom: 1px solid #303030;
+  }
+  .legal,
+  .info {
+    span {
+      display: block;
+      text-align: justify;
+      line-height: 1.5em;
+      padding: $space 0;
+    }
+  }
+  .links,
+  .indicia,
+  .social {
+    li {
+      display: inline-block;
+    }
+  }
+  .links {
+    a {
+      text-decoration: none;
+    }
+    ul {
+      margin: $space/2 0;
+    }
+    li {
+      width: 32%;
+      padding: $space/2.15 0;
+    }
+  }
+  .social {
+    text-align: center;
+    li {
+      padding: $space $space/4 0;
+    }
+  }
+  .indicia {
+    font-size: .85em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: $space 0;
+    li {
+      padding: 0 $space/4;
+      border-right: 1px solid #b6b4b4;
+      /* &:first-child, */
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+  .author {
+    display: none;
+    color: #999;
+    font-size: .85em;
+    text-align: center;
+    margin: $space 0;
+  }
+}
+
+h1,
+h2 {
+  color: #3c7cc9;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  padding-top: $space;
+}
+
+#mainContainer{
+  min-width: 320px;
+  background: #fff;
+  padding-top: 140px;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  padding: $space;
+}
+
+.hr {
+  width: $space*3;
+  border-top: 2px solid #b6b4b4;
+  padding-bottom: $space*1.5;
+  margin: $space*1.5 auto 0;
+}
+
+.desc {
+  color: #555454;
+  font-size: 1.35em;
+  line-height: 1.15em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.intro,
+.logo,
+.legal,
+.awards {
+  img {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+// SUPPORTING THEME
+
+.showcase {
+  z-index: 9995;
+  position: relative;
+  text-align: right;
+  height: 400px;
+  background-color: #F4F4F4;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: $space;
+  &.home {
+    background-image: url('../img/showcase-home.jpg');
+    background-position: right 35% top;
+    margin: 0;
+  }
+  &.what-we-fund,
+  &.answers,
+  &.how-it-works,
+  &.for-attorneys {
+    display: none;
+    background-image: none;
+  }
+  .cta {
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    right: 10px;
+    font-size: 2em;
+    line-height: 1.25em;
+    text-align: left;
+    text-transform: uppercase;
+    margin-right: $space;
+  }
+  .contactUs,
+  .btn {
+    text-align: center;
+  }
+  .contactUs {
+    font-size: .6em;
+    margin: $space 0 $space*2;
+    border-top: 1px solid #3c7cc9;
+    border-bottom: 1px solid #3c7cc9;
+    text-transform: none;
+  }
+  .btn {
+    border: 2px solid #fff;
+    a {
+      display: block;
+      color: #fff;
+      font-size: .6em;
+      line-height: 2.8em;
+      text-decoration: none;
+      background: #6ba439;
+      @include transform(0.3s);
+      &:after {
+        position: relative;
+        content: "\003e";
+        top: -2px;
+        left: $space/4;
+      }
+      &:hover {
+        background: #528426;
+      }
+    }
+  }
+}
+
+.intro {
+  letter-spacing: 1px;
+  h2 {
+    margin-bottom: $space;
+  }
+  p,
+  span {
+    margin-bottom: $space;
+  }
+  p {
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.4em;
+  }
+  span {
+    font-weight: 400;
+    line-height: 1.2em;
+    display: block;
+    text-transform: uppercase;
+  }
+  img {
+    margin-bottom: $space;
+  }
+  .desc {
+    color: #6ba439;
+    padding-bottom: $space*2;
+  }
+  .btn {
+    display: inline-block;
+    font-weight: 700;
+    border: 2px solid #6ba439;
+    a {
+      display: block;
+      color: #3c7cc9;
+      line-height: 2.8em;
+      letter-spacing: 6px;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 0 $space*2;
+      @include transform(0.3s);
+      &:hover {
+        color: #fff;
+        background: #6ba439;
+      }
+    }
+  }
+  .family {
+    min-width: 280px;
+    height: 180px;
+    background: url('../img/our-goal-is-simple.png') no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid #fff;
+    margin-bottom: $space;
+  }
+}
+
+.testimonials {
+  .symbol {
+    padding: $space*2 0;
+  }
+  .quote {
+    font-weight: 700;
+    line-height: 1.8em;
+    .author {
+      font-size: .85em;
+      font-weight: normal;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .location {
+      color: #999;
+      font-size: .8em;
+      font-weight: normal;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.getStarted,
+.getStarted .caption {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=90, Color=#000000)";/*IE 8*/
+  text-shadow: 0px 0px 6px #000000;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=90, Color=#000000); /*IE 5.5-7*/
+}
+
+.getStarted {
+  position: relative;
+  background: #ccc url('../img/showcase-getStarted.jpg') 50% no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  .caption {
+    position: relative;
+    z-index: 8500;
+    display: inline-block;
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    line-height: 1.25em;
+    padding: $space;
+    margin: $space*4 auto;
+    background: #3c7cc9;
+    background: rgba(255,255,255,0.25);
+    border: 2px solid #fff;
+  }
+}
+
+.benefits {
+  position: relative;
+  color: #fff;
+  background: #3c7cc9;
+  border-bottom: 4px solid #fff;
+  margin-top: $space*2;
+  a[name=benefits] {
+    position: absolute;
+    top: 160px;
+  }
+  h1 {
+    color: #fff;
+    font-size: 1.65em;
+    letter-spacing: 2px;
+    line-height: 1.2em;
+    margin-bottom: $space*1.5;
+  }
+  p {
+    font-size: 1.05em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1.2em;
+    margin-bottom: $space*1.5;
+    img {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: $space;
+    }
+  }
+  .content {
+    padding: $space $space*1.5 0;
+  }
+  .family {
+    height: 300px;
+    background: url('../img/get-the-cash-you-need-now.png') no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid #fff;
+  }
+}
+
+.awards {
+  background: #f4f4f4;
+  margin-top: $space;
+  li {
+    display: inline-block;
+    margin: 0 $space/2;
+    &:first-child {
+      display: block;
+    }
+    &:last-child {
+      display: block;
+    }
+  }
+  .seal {
+    display: inline-block;
+    width: 120px;
+  }
+}
+
+// WORDPRESS
+
+.post,
+.form {
+  text-align: left;
+  h3 {
+    color: #6ba439;
+    font-size: 1.35em;
+    margin: $space 0 0;
+    a {
+      color: #6ba439 !important;
+      text-decoration: underline;
+    }
+  }
+  a {
+    color: #3c7cc9;
+    text-decoration: underline;
+  }
+  .title {
+    color: #3c7cc9;
+    font-size: 1.6em;
+    margin-bottom: $space/2;
+  }
+  .subtitle {
+    color: #6ba439;
+    font-size: 1.25em;
+    margin-bottom: $space/2;
+  }
+  .date {
+    color: #555454;
+    font-size: .85em;
+    font-weight: 300;
+    margin-bottom: $space;
+  }
+}
+
+.post {
+  p {
+    margin: $space 0 0;
+  }
+  .article {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.25em;
+    padding: 0 0 $space;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+
+.copy {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.intro .copy {
+  font-size: 1em !important;
+}
+.benefits .copy {
+  font-size: 1em !important;
+  line-height: 1.2em;
+}
+
+.parallax-window {
+    min-height: 200px;
+    background: transparent;
+}

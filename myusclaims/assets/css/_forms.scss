@@ -1,0 +1,62 @@
+#contactForm {
+  text-align: left;
+  padding: $space;
+  border: 1px solid #ccc;
+  background: #eee;
+  label {
+    display: block;
+    padding: $space/2 0;
+  }
+  input,
+  textarea {
+    width: 100%;
+    display: block;
+    border: 1px solid #ccc;
+    padding: $space/2;
+  }
+  input {
+    color: #999;
+    &[type=text] {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    &[type=submit] {
+      color: #fff;
+      font-size: 1.25em;
+      padding: $space;
+      margin-top: $space;
+      background: #6ba439;
+      @include transform(0.3s);
+      &:hover {
+        background: #528426;
+      }
+    }
+  }
+  textarea {
+    color: #999;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .options {
+    label,
+    input {
+      display: inline-block;
+    }
+    label {
+      width: 88%;
+    }
+    input {
+      width: 2%;
+      vertical-align: top;
+      margin: $space/2;
+      margin-left: 0;
+    }
+  }
+  .role {
+    font-size: .85em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: $space/2;
+  }
+  .gutter {
+    font-size: 1px;
+    line-height: 1px;
+  }
+}

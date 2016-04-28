@@ -1,0 +1,60 @@
+  <head>
+    <title><?php echo bloginfo(name); ?></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Get you the cash you need from your settlement or judgment." />
+    <meta name="author" content="Steven E. Ventimiglia, Merit Mile LLC" />
+    <link rel="shortcut icon" href="<?php echo esc_url( home_url() ); ?>/favicon.ico?v=1" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <?php wp_head(); ?>
+    
+		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>assets/js/modernizr.min.js"></script>
+  </head>
+  <body>
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NKXPMT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NKXPMT');</script>
+<!-- End Google Tag Manager -->
+    <div id="mainContainer">
+      <header>
+        <div class="top">
+          <div class="wrapper group">
+            <div class="menu"><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/menu.png" alt="Menu" /><span>Menu</span></a></div>
+            <div class="contact">
+              <ul><!--
+              --><li><a href="http://www.facebook.com" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/icon_facebook.png" alt="Facebook" /></a></li><!--
+              --><li><a href="http://www.twitter.com" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/icon_twitter.png" alt="Twitter" /></a></li><!--
+              --><li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/icon_phone.png" alt="" /> <?php echo do_shortcode("[phone-number]"); ?></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- top -->
+        <div class="wrapper group">
+          <nav>
+            <ul><!--
+            --><li><a href="/">Home</a></li><!--
+            --><li><a href="/#benefits" class="glide">Get Cash Now</a></li><!--
+            --><li><a href="/what-we-fund/">What We Fund</a></li><!--
+            --><li><a href="/answers/">Answers</a></li><!--
+            --><li><a href="/how-it-works/">How It Works</a></li><!--
+            --><li><a href="/for-attorneys/">For Attorneys</a></li>
+            </ul>
+          </nav>
+          <div class="logo">
+            <!--// <?php echo esc_url( home_url( '/' ) ); ?> //-->
+            <a href="/"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/myusclaims.png" alt="<?php echo bloginfo(name); ?>" /></a>
+          </div><!-- logo -->
+        </div>
+      </header>

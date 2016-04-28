@@ -1,0 +1,42 @@
+<footer>
+  <div class="wrapper group">
+    <div class="info">
+      <h3>Structured Settlements</h3><span>Are you receiving regular payments from a structured settlement or annuity? Get the cash you deserve fast by calling 800-330-4765 or <a href="http://www.drbcapital.com/structured-settlements/" target="_blank">CLICK HERE</a>.</span> Our experienced representatives are standing by to assist you.
+      <div class="indicia">
+        <ul>
+          <!--//<li>&copy;2015 MyUSClaims.</li>//-->
+          <li><a href="/disclaimer/">Disclaimer</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms-and-conditions/">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="links">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#benefits">Get Cash Now</a></li>
+        <li><a href="/what-we-fund/">What We Fund</a></li>
+        <li><a href="/answers/">Answers</a></li>
+        <li><a href="/how-it-works/">How It Works</a></li>
+        <li><a href="/for-attorneys/">For Attorneys</a></li>
+      </ul>
+    </div>
+    <div class="legal">
+      <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/for-attorneys.png" alt="Get the Cash You Need Now" /><span>&copy; <?php
+$current_year=date("o");
+if ($current_year=="2010")
+echo "2010";
+else
+echo "$current_year"; ?> MyUSClaims Peter and US Claims are trade names of USClaims Opco LLC.  US Claims and MyUSClaims are trademarks of DRB Financial Solutions, LLC. USClaims does not currently provide funding to consumers residing in Arizona, Arkansas, Illinois, Maine, Maryland, Minnesotra, Nebraska, Tennesee or Vermont. Additional restrictions may apply. Call for details.</span>
+    </div>
+  </div>
+  <div class="author">Website by <a href="http://www.meritmile.com/contact" target="_blank">Merit Mile, LLC</a></div>
+</footer>
+</div><!-- mainContainer -->
+<?php wp_footer(); ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script defer src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/parallax.min.js"></script>
+<script defer src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/jquery.flexslider-min.js"></script>
+<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/script.js"></script>
+</body>

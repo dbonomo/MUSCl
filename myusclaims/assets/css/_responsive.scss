@@ -1,0 +1,335 @@
+/* SMARTPHONES PORTRAIT */
+@media screen and (min-width: 320px) {
+
+}
+
+@media screen and (min-width: 360px) {
+  header {
+    .logo {
+      img {
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+  }
+  footer {
+    .legal {
+      img {
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+  }
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media screen and (min-width: 480px) {
+  nav {
+    li {
+      display: inline-block;
+      width: 50%;
+      &:nth-child(odd) {
+        border-right: 1px solid #ccc;
+      }
+      &:nth-child(5n) {
+        border-bottom: none;
+      }
+    }
+  }
+  header {
+    .menu {
+      a {
+        &:link, &:visited,
+        &:hover, &:visited:hover {
+          span {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  .showcase {
+    &.what-we-fund,
+    &.answers,
+    &.how-it-works,
+    &.for-attorneys {
+      display: block;
+    }
+    &.what-we-fund {
+      background-image: url('../img/showcase-what-we-fund.jpg');
+      background-position: left 40% top;
+    }
+    &.answers {
+      background-image: url('../img/showcase-answers.jpg');
+      background-position: left 40% top;
+    }
+    &.how-it-works {
+      background-image: url('../img/showcase-how-it-works.jpg');
+      background-position: left 40% top;
+    }
+    &.for-attorneys {
+      background-image: url('../img/showcase-for-attorneys.jpg');
+      background-position: left 40% top;
+    }
+  }
+  .intro {
+    .family {
+      display: none;
+      float: right;
+      margin: 0 0 0 $space*2;
+    }
+  }
+  .awards {
+    ul {
+      width: 440px;
+      margin: 0 auto;
+      li {
+        &:first-child {
+          display: inline-block;
+        }
+        &:last-child {
+          display: inline-block;
+        }
+      }
+    }
+    .seal {
+      width: 140px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  .intro {
+    text-align: left;
+    .family {
+      display: block;
+    }
+  }
+  .benefits {
+    a[name=benefits] {
+      position: absolute;
+      top: -140px;
+    }
+    .family {
+      display: none;
+    }
+  }
+  .awards {
+    ul {
+      width: 500px;
+    }
+  }
+}
+
+
+/* TABLETS PORTRAIT */
+@media screen and (min-width: 768px) {
+  nav {
+    li {
+      width: 33.333%;
+      border-right: 1px solid #ccc;
+      &:nth-child(3n),
+      &:nth-child(6n) {
+        border-right: none;
+      }
+      &:nth-child(4n) {
+        border-bottom: none;
+      }
+    }
+  }
+  .showcase {
+    font-size: 1.35em;
+    height: 460px;
+    .cta {
+      margin-right: $space*2;
+    }
+  }
+  .intro {
+    .family {
+      width: 380px;
+      height: 250px;
+    }
+  }
+  .getStarted {
+    text-align: center;
+  }
+  .testimonials {
+    text-align: center;
+  }
+  /*
+  #contactForm {
+    input {
+      &[type=submit] {
+        float: right;
+        display: inline-block;
+      }
+    }
+  }
+  */
+}
+
+/* DESKTOP */
+@media screen and (min-width: 980px) {
+  body {
+    text-align: left;
+  }
+  nav {
+    float: right;
+    display: inline-block !important;
+    background: #fff;
+    padding: $space*1.5 $space/2 0 0;
+    ul {
+      border: none;
+      li {
+        width: auto;
+        display: inline-block;
+        margin-left: $space;
+        border: none !important;
+        a {
+          padding: $space/2 0;
+          &:link, &:visited {
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+          }
+          &:hover, &:visited:hover {
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+          }
+        }
+      }
+    }
+  }
+  header {
+    .menu {
+      display: none;
+    }
+    .logo {
+      float: left;
+      padding-left: $space/2;
+    }
+  }
+  footer {
+    .legal,
+    .links,
+    .info,
+    .social {
+      float: left;
+      border: none;
+    }
+    .legal,
+    .links {
+      margin-bottom: 0;
+    }
+    .indicia {
+      margin-top: $space/2;
+      text-align: left;
+      white-space: nowrap;
+    }
+    .social {
+      width: 35%;
+      padding-top: 0;
+      text-align: left;
+      ul {
+        margin-top: -$space;
+        li {
+          padding: 0 $space/4 0;
+        }
+      }
+    }
+    .info,
+    .legal,
+    .social {
+      width: 35%;
+    }
+    .sep {
+      float: left;
+      width: 30%;
+    }
+    .links {
+      width: 30%;
+      padding: 0 0 0 10%;
+      ul {
+        display: inline-block;
+        white-space: nowrap;
+        li {
+          display: block;
+          &:first-child {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .benefits {
+    p {
+      float: right;
+      img {
+        float: left;
+        display: inline-block;
+        margin: 0 $space $space*1.5 0;
+      }
+    }
+    .family {
+      float: left;
+      width: 48%;
+      display: inline-block;
+      height: 700px;
+      border-bottom: none;
+      border-left: 2px solid #fff;
+      border-right: 2px solid #fff;
+    }
+    .content {
+      float: left;
+      width: 52%;
+    }
+  }
+  .awards {
+    ul {
+      width: 960px;
+    }
+  }
+  .post {
+    .content {
+      padding: $space/2;
+    }
+  }
+  #contactForm {
+    input {
+      &[type=submit] {
+        float: right;
+        max-width: 280px;
+      }
+    }
+    .pair,
+    .gutter {
+      float: left;
+    }
+    .pair {
+      width: 48%;
+    }
+    .gutter {
+      width: 4%;
+    }
+  }
+}
+
+/* TABLET LANDSCAPE & DESKTOP */
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1170px) {
+  .wrapper {
+    width: 1170px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .showcase {
+    height: 600px;
+    .contactUs {
+      margin: $space*2 0;
+    }
+  }
+}

@@ -1,0 +1,144 @@
+<?php
+/*
+Template Name: Home
+*/
+?>
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<?php get_header(); ?>
+      <div class="showcase home">
+        <div class="wrapper">
+          <div class="cta">
+            Hired A Lawyer?<br/>
+            Filed A Claim?<br/>
+            Get Cash Now.<br/>
+            <div class="contactUs">Contact MyUSClaims</div>
+            <div class="btn"><a href="/contact-us/">Act Now</a></div>
+          </div>
+        </div>
+      </div><!-- showcase -->
+      <div class="intro">
+        <div class="wrapper">
+          <div class="content group">
+            <h2>Our Goal Is Simple</h2>
+            <!--//<div class="hr"></div>//-->
+            <div class="desc">Get you the cash you need from your settlement or judgment - now!<br/>The process couldn’t be easier!</div>
+            <div class="family"></div>
+            <p><span>The fastest way to get started is to call us. The call is toll-free – <?php echo do_shortcode("[phone-number]"); ?>.</span></p>
+            <p class="copy">Our application process is easy, and once approved, we can get you the cash you need in as little as 24 hours. If your case is unsuccessful, you don’t owe us anything - no recovery means no repayment. We share the risk with you, and we’ll work with you and your attorney to build a plan to fit your individual needs.</p>
+            <div class="btn"><a href="/how-it-works/">How It Works</a></div>
+          </div>
+        </div>
+      </div><!-- intro -->
+      <div class="benefits">
+        <div class="wrapper group">
+          <div class="family"></div>
+          <div class="content group">
+            <a name="benefits"></a>
+            <h1>Get The Cash You Need Now</h1>
+            <p class="copy">
+              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/accident-coverage.png" alt="" />
+              Were you hurt in an accident as the result of someone else's negligence?  We can provide cash fast to help with your living expenses and medical bills. Why suffer another day because of someone else's negligence?
+            </p>
+            <p class="copy">
+              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/need-cash-fast.png" alt="" />
+              If you're involved in a lawsuit and need cash fast for your daily living expenses, medical bills or any unforeseen expenses, we can help.  Simply call today and your account executive will assess your case for getting you all the cash you need.
+            </p>
+            <p class="copy">
+              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/peace-of-mind.png" alt="" />
+              Find peace of mind with the cash you need so your attorney can fight for the best settlement or judgment that you deserve.  With nearly 20 years of experience, we deliver cash quickly with the lowest fees in our industry.
+            </p>
+            <p class="copy">
+              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/dont-settle-for-less.png" alt="" />
+              Remember, insurance companies want to drag out your case, hoping you'll settle for less money than you deserve. They can afford to wait, but chances are you can’t.
+            </p>
+          </div>
+        </div>
+      </div><!-- benefits -->
+      <div class="getStarted">
+        <div class="people parallax-window" data-parallax="scroll" data-image-src="http://myusclaimscom.staging.wpengine.com/wp-content/themes/myusclaims/assets/img/showcase-getStarted.jpg" data-z-index="8500">
+          <div class="content">
+            <div class="caption">Call <?php echo do_shortcode("[phone-number]"); ?> to Get Started!</div>
+          </div>
+        </div>
+      </div><!-- getStarted -->
+      <div class="testimonials">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <div class="wrapper">
+                <div class="content">
+                  <h2>Testimonials</h2>
+                  <div class="hr"></div>
+                  <div class="desc">What Our Satisfied Customers Are Saying...</div>
+                  <div class="symbol"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/satisfied-clients.png" alt="Testimonials" /></div>
+                  <div class="quote">
+                    <div class="copy">&quot;It is inconceivable that my clients would have the fortitude to endure their life travails and duration of their cases without the spectacular and abundant support of USClaims. Of all the many litigation finance companies I have encountered, I have never dealt with one more financially fair, supportive, and responsive to the typically steep hardships endured by my deeply injured clients.&quot;</div>
+                    <div class="hr"></div>
+                    <div class="author">Michael Flomenhaft, Esq.</div>
+                    <div class="location">The Flomenhaft Law Firm, PLLC</div>
+                    <div class="location">New York, New York</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="wrapper">
+                <div class="content">
+                  <h2>Testimonials</h2>
+                  <div class="hr"></div>
+                  <div class="desc">What Our Satisfied Customers Are Saying...</div>
+                  <div class="symbol"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/satisfied-clients.png" alt="Testimonials" /></div>
+                  <div class="quote">
+                    <div class="copy">&quot;One of my clients needed some money desperately to save her house. USClaims acted quickly to provide my client with the financial support she needed. It was instrumental in preventing foreclosure action, and it gave us the time we needed to get the settlement she deserved.&quot;</div>
+                    <div class="hr"></div>
+                    <div class="author">Stacey L. Schwartz, Esq.</div>
+                    <div class="location">Schwartz and Blackman</div>
+                    <div class="location">Philadelphia, Pennsylvania</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="wrapper">
+                <div class="content">
+                  <h2>Testimonials</h2>
+                  <div class="hr"></div>
+                  <div class="desc">What Our Satisfied Customers Are Saying...</div>
+                  <div class="symbol"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/satisfied-clients.png" alt="Testimonials" /></div>
+                  <div class="quote">
+                    <div class="copy">&quot;I highly recommend USClaims to anyone involved in litigation needing financing while their case is pending. I will forever be grateful to USClaims for saving my family financially. We always had our money within days... They were always right there to help whenever we needed them.&quot;</div>
+                    <div class="hr"></div>
+                    <div class="author">Sharon and Romeo F.</div>
+                    <div class="location">Lagrangeville, New York</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="custom-navigation">
+          <div class="custom-controls-container"></div>
+        </div>
+      </div><!-- testimonials -->
+      <div class="awards">
+        <div class="wrapper">
+          <div class="content">
+            <h2>Awards</h2>
+            <div class="hr"></div>
+            <ul>
+              <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/alfa-american-legal-finance-association.png" alt=""></li>
+              <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/legal-intelligencer.png" alt="" class="seal"></li>
+              <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/new-jersey-law-journal.png" alt="" class="seal"></li>
+              <li><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/national-law-journal.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- awards -->
+<?php get_footer(); ?>
+</html>

@@ -1,0 +1,33 @@
+==========
+ HTML
+==========
+
+<div id="dev">
+  <div class="viewport">
+    <b>Width:</b> <div id="width"></div> &nbsp;&nbsp; <b>Height:</b> <div id="height"></div>
+  </div>
+</div>
+
+
+==========
+ CSS
+==========
+
+// DEVELOPMENT TOOLS
+#dev {
+  .viewport {
+    position: absolute;
+    bottom: $space;
+    left: 0;
+    right: 0;
+    color: #000;
+    font-size: .85em;
+    text-align: center;
+    margin: 0 auto;
+    opacity: .5;
+    #width,
+    #height {
+      display: inline;
+    }
+  }
+}
